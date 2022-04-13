@@ -1,0 +1,35 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.menu-in-header {
+  display: flex;
+}
+.menu-option {
+  margin-right: 40px;
+}
+#root {
+  margin: 0px 100px;
+  /* background: aliceblue; */
+}
+.intro {
+  margin-top: 50px;
+}
+.view-resume {
+  border: 1.5px solid black;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.view-resume-text {
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+}
