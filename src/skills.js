@@ -1,35 +1,22 @@
 import React from "react";
+import skillData from "./data";
 
 export default function Skills() {
-  const data = ["col1", "col2", "col3", "col4", "col5", "col6"];
   return (
     <div>
       <h1>Take a look at my Skills</h1>
-      <div
-        className="columns is-multiline"
-        style={{ marginLeft: "-20px", marginTop: "6px" }}
-      >
-        {data.map((data) => (
-          <div
-            className="column is-one-fourth is-flex is-justify-content-space-around"
-            key={data.id}
-          >
-            <div
-              className="card"
-              style={{
-                width: "14rem",
-                height: "10rem",
-                borderRadius: "10px"
-              }}
-            >
+      <div className="columns is-multiline" style={{ marginTop: "6px" }}>
+        {skillData.map((data, index) => (
+          <div key={index} className="column is-one-quarter is-flex">
+            <div className="card">
               <img
                 className="card-img-top"
-                style={{ height: "60px", width: "80px" }}
-                src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png"
-                alt="Card img cap"
+                style={{ height: "60px", width: "60px" }}
+                src={data.img}
+                alt="icon"
               />
               <div className="card-body">
-                <p>JavaScript</p>
+                <p>{data.name}</p>
               </div>
             </div>
           </div>
