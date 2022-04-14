@@ -13,7 +13,10 @@
   display: flex;
 }
 .menu-option {
-  margin-right: 40px;
+  margin: 0px 30px;
+}
+.menu-icon {
+  display: none;
 }
 #root {
   margin: 0px 100px;
@@ -31,7 +34,7 @@
   text-decoration: none;
   color: rgb(63, 63, 63);
 }
-.card {
+.skill-cards {
   width: 14rem;
   height: 10rem;
   display: flex;
@@ -39,4 +42,69 @@
   align-items: center;
   justify-content: space-evenly;
   border-radius: 10px;
+}
+.skill-parent-div {
+  text-align: center;
+}
+.skill-info {
+  padding: 0px 125px;
+}
+.company-logo {
+  margin-right: 30px;
+  padding: 10px;
+  border: 1.5px solid black;
+}
+.experience-parent-div {
+  margin: 0px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  #root {
+    margin: 10px 30px;
+  }
+  .menu-option {
+    margin: 0px 20px;
+  }
+  .skill-info {
+    padding: unset;
+  }
+  .experience-parent-div {
+    margin: unset;
+  }
+  .skill-cards {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    /* background-color: olive; */
+  }
+  /* #root {
+    margin: 10px 30px;
+  } */
+  /* .skill-info {
+    padding: unset;
+  } */
+  .menu-in-header {
+    display: none;
+  }
+  .skill-parent-div {
+    text-align: unset;
+  }
+  /* .skill-cards {
+    width: 100%;
+  } */
+  .menu-icon {
+    display: block;
+    margin-left: 15px;
+    font-size: 25px;
+  }
+  .view-resume-parent-and-menu-icon {
+    display: flex;
+    align-items: center;
+  }
 }

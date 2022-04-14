@@ -1,4 +1,5 @@
 import React from "react";
+import { GoThreeBars } from "react-icons/go";
 
 export default function Header() {
   return (
@@ -10,15 +11,18 @@ export default function Header() {
         <p className="menu-option">Projects</p>
         <p className="menu-option">About Me</p>
       </div>
-      <p className="view-resume">
-        <a
-          href="https://docs.google.com/document/d/1UdAur_a4h_9o5A2XBAabc4m2tfEFE_h_4RGqSbTKIk0/edit?usp=sharing"
-          target="_blank"
-          className="view-resume-text"
-        >
-          View Resume
-        </a>
-      </p>
+      <div className="view-resume-parent-and-menu-icon">
+        <p className="view-resume">
+          <a
+            href="https://docs.google.com/document/d/1UdAur_a4h_9o5A2XBAabc4m2tfEFE_h_4RGqSbTKIk0/edit?usp=sharing"
+            target="_blank"
+            className="view-resume-text"
+          >
+            View Resume
+          </a>
+        </p>
+        <GoThreeBars className="menu-icon" />
+      </div>
     </div>
   );
 }
