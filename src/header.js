@@ -4,7 +4,7 @@ import { GoThreeBars } from "react-icons/go";
 export default function Header() {
   return (
     <div className="header">
-      <h1>Manasa Bingi</h1>
+      <h1 className="name">Manasa Bingi</h1>
       <div className="menu-in-header">
         <p className="menu-option">Home</p>
         <p className="menu-option">Skills</p>

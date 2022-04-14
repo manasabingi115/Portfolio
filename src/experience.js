@@ -1,41 +1,45 @@
 import React from "react";
+import data from "./Data/experience";
 
 export default function Experience() {
   return (
     <div className="experience-parent-div">
-      <h1>My Experience</h1>
+      <h1 className="exp-title">My Experience</h1>
       <p>This is the company I am working in. </p>
-      <div class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              {/* <figure class="image"> */}
-              <img
-                className="company-logo"
-                src="https://www.italentdigital.com/assets/img/iTalent_logo.png"
-                alt="Placeholder img"
-                width="100"
-              />
-              {/* </figure> */}
+      {data.map((data, index) => (
+        <div className="card exp-cards" key={index}>
+          <div className="card-content">
+            <div className="media">
+              <div className="media-left">
+                <img
+                  className="company-logo"
+                  src={data.logo}
+                  alt="Placeholder img"
+                  width="100"
+                />
+              </div>
+              <div className="media-content">
+                <p className="title is-4">{data.companyName}</p>
+                <p className="subtitle is-6">{data.position}</p>
+              </div>
             </div>
-            <div class="media-content">
-              <p class="title is-4">iTalent Digital</p>
-              <p class="subtitle is-6">Software Engineer</p>
+            <div className="content">
+              <p>{data.description}</p>
+              <p>Technologies Using:</p>
+              <div className="techs-in-companies columns is-multiline is-mobile">
+                {data.technologies.map((tech, index) => (
+                  <p
+                    key={index}
+                    className="tech-in-company column is-one-sixth is-flex"
+                  >
+                    <span>{tech}</span>
+                  </p>
+                ))}
+              </div>
             </div>
-          </div>
-
-          <div class="content">
-            <p>
-              Working on Khoros community. In this, we are using some
-              technologies. tdxctgfvghbuhb fctrcvytvyhbbbbbbbbbbbbbbbbbbbbbjgv
-              hhgvgvgvhgv
-            </p>
-            Technologies Using:
-            <br />
-            JavaScript, React, Freemarker, Jquery, HTML, CSS.
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }

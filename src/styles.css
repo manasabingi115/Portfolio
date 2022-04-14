@@ -1,5 +1,8 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
+body {
+  background: aliceblue;
+}
 .App {
   font-family: sans-serif;
 }
@@ -8,6 +11,24 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
+}
+.name {
+  /* font-family: "Inter"; */
+  font-size: 45px;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-image: linear-gradient(
+    147deg,
+    #f90fd8,
+    #f54377 26%,
+    #fc1c1c 50%,
+    #ff520d 75%,
+    #72fb59
+  );
 }
 .menu-in-header {
   display: flex;
@@ -55,10 +76,61 @@
   border: 1.5px solid black;
 }
 .experience-parent-div {
-  margin: 0px 150px;
+  margin: 0px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.exp-cards {
+  min-width: -webkit-fill-available;
+  margin: 20px 0px;
+}
+.techs-in-companies {
+  /* overflow-wrap: anywhere; */
+  /* text-align: center; */
+  margin: 0px 20px;
+}
+.tech-in-company {
+  max-width: 120px;
+  margin-right: 10px;
+  border-radius: 30px;
+  padding: 6px 15px;
+  background: rgb(224, 247, 224);
+}
+.exp-title {
+  /* font-family: "Inter"; */
+  font-size: 45px;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-image: linear-gradient(
+    145deg,
+    #0e8103,
+    #43f55b 26%,
+    #18b825 50%,
+    #ffdb0d 75%,
+    #e8f384
+  );
+}
+.skills-title {
+  font-size: 45px;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-image: linear-gradient(
+    145deg,
+    #0e8103,
+    #43f55b 26%,
+    #18b825 50%,
+    #ffdb0d 75%,
+    #e8f384
+  );
 }
 
 @media screen and (max-width: 800px) {
@@ -74,9 +146,9 @@
   .experience-parent-div {
     margin: unset;
   }
-  .skill-cards {
+  /* .skill-cards {
     width: 100%;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -106,5 +178,15 @@
   .view-resume-parent-and-menu-icon {
     display: flex;
     align-items: center;
+  }
+  .media {
+    display: flex;
+    flex-direction: column;
+  }
+  .company-logo {
+    margin-bottom: 15px;
+  }
+  .skill-cards {
+    width: 100%;
   }
 }

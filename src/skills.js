@@ -1,10 +1,10 @@
 import React from "react";
-import skillData from "./data";
+import skillData from "./Data/skillData";
 
 export default function Skills() {
   return (
     <div className="skill-parent-div">
-      <h1>Take a look at my Skills</h1>
+      <h1 className="skills-title">Take a look at my Skills</h1>
       <p className="skill-info">
         These are my skills and this contains all the technologies and
         programming languages that I have learnt until now. I am constantly
