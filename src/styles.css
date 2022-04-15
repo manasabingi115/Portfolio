@@ -136,6 +136,19 @@ body {
     #e8f384
   );
 }
+.mobile-menu {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+  margin-left: auto;
+  padding: 15px 30px;
+  line-height: 3;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+}
 
 @media screen and (max-width: 800px) {
   #root {
