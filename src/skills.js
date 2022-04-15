@@ -10,9 +10,15 @@ export default function Skills() {
         programming languages that I have learnt until now. I am constantly
         learning, therefore I may update this section more often.
       </p>
-      <div className="columns is-multiline" style={{ marginTop: "6px" }}>
+      <div
+        className="columns is-multiline cards-component"
+        style={{ marginTop: "6px" }}
+      >
         {skillData.map((data, index) => (
-          <div key={index} className="column is-one-quarter is-flex">
+          <div
+            key={index}
+            className="column is-one-quarter is-flex skill-card-parent"
+          >
             <div className="card skill-cards">
               <img
                 className="card-img-top"

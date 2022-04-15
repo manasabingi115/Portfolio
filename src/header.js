@@ -1,16 +1,29 @@
 import React from "react";
 import { GoThreeBars } from "react-icons/go";
+import { ImCancelCircle } from "react-icons/im";
 
 export default function Header() {
+  const menuList = ["Home", "Skills", "Projects", "About Me"];
+  const [mobileMenu, setMobileMenu] = React.useState();
+  function Menu() {
+    return (
+      <div className="menu-in-header">
+        {menuList.map((item, index) => (
+          <p key={index} className="menu-option">
+            {item}
+          </p>
+        ))}
+
+        {/* <p className="menu-option">Skills</p>
+        <p className="menu-option">Projects</p>
+        <p className="menu-option">About Me</p> */}
+      </div>
+    );
+  }
   return (
     <div className="header">
       <h1 className="name">Manasa Bingi</h1>
-      <div className="menu-in-header">
-        <p className="menu-option">Home</p>
-        <p className="menu-option">Skills</p>
-        <p className="menu-option">Projects</p>
-        <p className="menu-option">About Me</p>
-      </div>
+      <Menu />
       <div className="view-resume-parent-and-menu-icon">
         <p className="view-resume">
           <a
@@ -21,7 +34,18 @@ export default function Header() {
             View Resume
           </a>
         </p>
-        <GoThreeBars className="menu-icon" />
+        <div className="menu-icon-parent">
+          <GoThreeBars
+            className="menu-icon"
+            onClick={() => setMobileMenu(true)}
+          />
+          <br />
+          {mobileMenu && (
+            <ImCancelCircle onClick={() => setMobileMenu(false)} />
+          )}
+          {mobileMenu &&
+            menuList.map((item, index) => <p key={index}>{item}</p>)}
+        </div>
       </div>
     </div>
   );
