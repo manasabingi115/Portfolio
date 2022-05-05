@@ -3,7 +3,7 @@ import skillData from "./Data/skillData";
 
 export default function Skills() {
   return (
-    <div className="skill-parent-div">
+    <div className="skill-parent-div" id="skills">
       <h1 className="skills-title">Take a look at my Skills</h1>
       <p className="skill-info">
         These are my skills and this contains all the technologies and

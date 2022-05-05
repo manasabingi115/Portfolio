@@ -3,37 +3,50 @@ import { GoThreeBars } from "react-icons/go";
 import { ImCancelCircle } from "react-icons/im";
 
 export default function Header() {
-  const menuList = ["Home", "Skills", "Projects", "About Me"];
+  // const menuList = ["Home", "Skills", "Projects", "About Me"];
   const [mobileMenu, setMobileMenu] = React.useState();
   function Menu() {
     return (
       <div className="menu-in-header">
-        {menuList.map((item, index) => (
-          <p key={index} className="menu-option">
-            {item}
-          </p>
-        ))}
-
-        {/* <p className="menu-option">Skills</p>
-        <p className="menu-option">Projects</p>
-        <p className="menu-option">About Me</p> */}
+        <p className="menu-option">
+          <a href="#home">Home</a>
+        </p>
+        <p className="menu-option">
+          <a href="#skills">Skills</a>
+        </p>
+        <p className="menu-option">
+          <a href="#skills">Projects</a>
+        </p>
+        <p className="menu-option">
+          <a href="#skills">About Me</a>
+        </p>
       </div>
     );
   }
   function MobileMenu() {
     return (
       <div className="mobile-menu">
-        <ImCancelCircle onClick={() => setMobileMenu(false)} />
-        {menuList.map((item, index) => (
-          <p key={index}>{item}</p>
-        ))}
+        <span id="mark-on-mobile-menu"></span>
+        {mobileMenu && <ImCancelCircle onClick={() => setMobileMenu(false)} />}
+        <p className="menu-option">
+          <a href="#home">Home</a>
+        </p>
+        <p className="menu-option">
+          <a href="#skills">Skills</a>
+        </p>
+        <p className="menu-option">
+          <a href="#projects">Projects</a>
+        </p>
+        <p className="menu-option">
+          <a href="#skills">About Me</a>
+        </p>
       </div>
     );
   }
 
   return (
     <div>
-      <div className="header">
+      <div className="header" id="home">
         <h1 className="name">Manasa Bingi</h1>
         <Menu />
         <div className="view-resume-parent-and-menu-icon">
@@ -55,10 +68,6 @@ export default function Header() {
         </div>
       </div>
       {mobileMenu && <MobileMenu />}
-      {/* <div className="mobile-menu">
-        {mobileMenu && <ImCancelCircle onClick={() => setMobileMenu(false)} />}
-        {mobileMenu && menuList.map((item, index) => <p key={index}>{item}</p>)}
-      </div> */}
     </div>
   );
 }

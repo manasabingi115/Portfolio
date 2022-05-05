@@ -3,7 +3,7 @@ import data from "./Data/experienceData";
 
 export default function Experience() {
   return (
-    <div className="experience-parent-div">
+    <div className="experience-parent-div" id="experience">
       <h1 className="exp-title">My Experience</h1>
       <p>This is the company I am working in. </p>
       {data.map((data, index) => (
