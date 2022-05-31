@@ -157,6 +157,9 @@ body {
   margin-top: -25px;
   transform: rotate(45deg);
 }
+.card {
+  margin-bottom: 10px;
+}
 
 @media screen and (max-width: 800px) {
   #root {
