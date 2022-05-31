@@ -6,23 +6,6 @@ const data = [
     description:
       "Working on Khoros community. In this, we are using some technologies.",
     technologies: ["JavaScript", "React", "Freemarker", "Jquery", "HTML", "CSS"]
-  },
-  {
-    logo: "",
-    companyName: "",
-    position: "",
-    description: "",
-    technologies: [
-      "JavaScript",
-      "React",
-      "Freemarker",
-      "Jquery",
-      "HTML",
-      "CSS",
-      "Jquery",
-      "HTML",
-      "CSS"
-    ]
   }
 ];
 export default data;
