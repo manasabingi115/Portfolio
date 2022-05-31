@@ -39,7 +39,7 @@ const projectsData = [
     no: 5,
     projectName: "Todo application based on REST API",
     description:
-      "This Todo list app is generally used to maintain our day-to-day tasks. We can add/delete/update/delete tasks. It used a third party REST API as a backend service. It is built with HTML,CSS and JavaScript. It uses REST API to fetch the data.",
+      "This Todo list app is generally used to maintain our day-to-day tasks. We can add/delete/update tasks. It used a third party REST API as a backend service. It is built with HTML,CSS and JavaScript. It uses REST API to fetch the data.",
     technologiesUsed: ["JavaScript", "HTML", "CSS", "Api"],
     liveAt: "https://web-platform-fhwhid.stackblitz.io",
     githubRepo: "https://github.com/manasabingi115/Todo-REST-application"
