@@ -102,7 +102,9 @@ body {
   padding: 6px 15px;
   background: rgb(224, 247, 224);
 }
-.exp-title {
+.exp-title,
+.skills-title,
+.projects-title {
   font-size: 45px;
   letter-spacing: -1px;
   padding-bottom: 10px;
@@ -119,7 +121,7 @@ body {
     #e8f384
   );
 }
-.skills-title {
+/* .skills-title {
   font-size: 45px;
   letter-spacing: -1px;
   padding-bottom: 10px;
@@ -135,7 +137,7 @@ body {
     #ffdb0d 75%,
     #e8f384
   );
-}
+} */
 .mobile-menu {
   background-color: white;
   display: flex;
