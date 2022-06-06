@@ -167,6 +167,7 @@ body {
 }
 .project-card {
   margin: 10px;
+  min-height: 550px;
 }
 
 @media screen and (max-width: 800px) {
