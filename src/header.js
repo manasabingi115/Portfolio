@@ -55,6 +55,7 @@ export default function Header() {
               href="https://docs.google.com/document/d/1UdAur_a4h_9o5A2XBAabc4m2tfEFE_h_4RGqSbTKIk0/edit?usp=sharing"
               target="_blank"
               className="view-resume-text"
+              rel="noreferrer"
             >
               View Resume
             </a>
