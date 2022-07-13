@@ -4,7 +4,7 @@ import data from "./Data/projectsData";
 
 export default function Projects() {
   return (
-    <div>
+    <div id="projects-container">
       <h1 className="projects-title">Projects</h1>
       <div id="projects" className="columns is-multiline">
         {data.map((data, index) => (

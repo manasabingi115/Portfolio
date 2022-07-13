@@ -15,7 +15,7 @@ export default function Header() {
           <a href="#skills">Skills</a>
         </p>
         <p className="menu-option">
-          <a href="#skills">Projects</a>
+          <a href="#projects-container">Projects</a>
         </p>
         <p className="menu-option">
           <a href="#skills">About Me</a>
@@ -35,7 +35,7 @@ export default function Header() {
           <a href="#skills">Skills</a>
         </p>
         <p className="menu-option">
-          <a href="#projects">Projects</a>
+          <a href="#projects-container">Projects</a>
         </p>
         <p className="menu-option">
           <a href="#skills">About Me</a>
