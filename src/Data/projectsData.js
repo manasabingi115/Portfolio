@@ -13,7 +13,7 @@ const projectsData = [
     image: shoppingimg,
     projectName: "React Shopping Cart",
     description:
-      "This is a Food Cart App. In this we can add food items into the cart. And in this, food items are separated according to their type like vegetables, fruits and nuts. This app is designed with React.",
+      "This is a Food Cart App. In this we can add food items into the cart. And in this, food items are separated according to their type like vegetables, fruits and nuts.",
     technologiesUsed: ["ReactJs", "HTML", "CSS", "Api", "Bootstrap"],
     liveAt: "https://03s3u.csb.app/",
     githubRepo: "https://github.com/manasabingi115/React-Shopping-Cart"
@@ -43,7 +43,7 @@ const projectsData = [
     image: recipesimg,
     projectName: "Food Recipe App",
     description:
-      "This is a Food Recipe App. In this we can search for different types of food recipes which we want. This app is designed with React.",
+      "This is a Food Recipe App. In this we can search for different types of food recipes which we want.",
     technologiesUsed: ["ReactJs", "HTML", "CSS", "Api", "Bootstrap"],
     liveAt: "https://yvltb.csb.app/",
     githubRepo: "https://github.com/manasabingi115/Food-Recipe-App"

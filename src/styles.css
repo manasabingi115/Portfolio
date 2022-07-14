@@ -95,12 +95,15 @@ body {
 .techs-in-companies {
   margin: 0px 20px;
 }
-.tech-in-company {
+.tech-in-company,
+.techs-in-project {
   max-width: 120px;
   margin-right: 10px;
   border-radius: 30px;
   padding: 6px 15px;
   background: rgb(224, 247, 224);
+  align-items: center;
+  justify-content: center;
 }
 .exp-title,
 .skills-title,
@@ -167,7 +170,15 @@ body {
 }
 .project-card {
   margin: 10px;
-  min-height: 550px;
+  /* min-height: 550px; */
+}
+/* .projects-card-content {
+  height: 535px;
+  overflow-y: scroll;
+} */
+.buttons-in-card {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 800px) {

@@ -14,21 +14,49 @@ export default function Projects() {
                 <img src={data.image} alt="Placeholder img" />
               </figure>
             </div>
-            <div className="card-content">
+
+            <div className="card-content projects-card-content">
               <div className="media">
                 <div className="media-content">
                   <p className="title is-4">{data.projectName}</p>
                 </div>
                 {/* <img src={data.image} /> */}
               </div>
+
               <div className="content">
                 <p>{data.description}</p>
-                {data.technologiesUsed.map((el, index) => (
-                  <p key={index}>{el}</p>
+
+                {/* <div className="techs-in-companies columns is-multiline is-mobile">
+                {data.technologies.map((tech, index) => (
+                  <p
+                    key={index}
+                    className="tech-in-company column is-one-sixth is-flex"
+                  >
+                    <span>{tech}</span>
+                  </p>
                 ))}
-                {/* <a href="">Link</a> */}
+              </div> */}
+                <p>Technologies Used:</p>
+                <br />
+
+                <div className="techs-in-projects columns is-multiline is-mobile">
+                  {data.technologiesUsed.map((el, index) => (
+                    <p
+                      className="techs-in-project column is-one-sixth is-flex"
+                      key={index}
+                    >
+                      <span> {el}</span>
+                    </p>
+                  ))}
+                </div>
                 <div className="techs-in-companies columns is-multiline is-mobile"></div>
               </div>
+            </div>
+            <div className="buttons-in-card">
+              <button className="button is-link">Live Website</button>
+              <button className="button is-link is-outlined">
+                Github Code
+              </button>
             </div>
           </div>
         ))}
