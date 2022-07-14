@@ -53,10 +53,20 @@ export default function Projects() {
               </div>
             </div>
             <div className="buttons-in-card">
-              <button className="button is-link">Live Website</button>
-              <button className="button is-link is-outlined">
+              <a
+                href={data.liveAt}
+                target="blank"
+                className="button is-link projects-card-button"
+              >
+                Live Website
+              </a>
+              <a
+                href={data.githubRepo}
+                target="blank"
+                className="button is-link is-outlined projects-card-button"
+              >
                 Github Code
-              </button>
+              </a>
             </div>
           </div>
         ))}

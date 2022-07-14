@@ -95,15 +95,19 @@ body {
 .techs-in-companies {
   margin: 0px 20px;
 }
+.techs-in-projects {
+  align-items: center;
+}
 .tech-in-company,
 .techs-in-project {
   max-width: 120px;
-  margin-right: 10px;
+  margin: 5px 10px;
   border-radius: 30px;
   padding: 6px 15px;
   background: rgb(224, 247, 224);
   align-items: center;
   justify-content: center;
+  /* margin-bottom: unset; */
 }
 .exp-title,
 .skills-title,
@@ -170,15 +174,21 @@ body {
 }
 .project-card {
   margin: 10px;
+  /* width: 300px; */
+}
+.project-card {
   /* min-height: 550px; */
 }
 /* .projects-card-content {
   height: 535px;
   overflow-y: scroll;
 } */
+.projects-card-button {
+  margin: 20px 10px;
+}
 .buttons-in-card {
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
 @media screen and (max-width: 800px) {

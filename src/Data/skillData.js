@@ -27,6 +27,15 @@ const skillData = [
     img:
       "https://anbuselvanrocky.gallerycdn.vsassets.io/extensions/anbuselvanrocky/bootstrap5-vscode/0.2.0/1626907587069/Microsoft.VisualStudio.Services.Icons.Default",
     name: "Bootstrap"
+  },
+  {
+    img: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    name: "GitHub"
+  },
+  {
+    img:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s---xCsVK0j--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://reacttraining.com/images/blog/reach-react-router-future.png",
+    name: "React-Router"
   }
 ];
 
