@@ -9,11 +9,13 @@ import Footer from "./footer";
 export default function App() {
   return (
     <div className="App">
-      <Header />
-      <Introduction />
-      <Skills />
-      <Experience />
-      <Projects />
+      <div className="page-main-content">
+        <Header />
+        <Introduction />
+        <Skills />
+        <Experience />
+        <Projects />
+      </div>
       <Footer />
     </div>
   );

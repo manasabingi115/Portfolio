@@ -18,7 +18,7 @@ export default function Header() {
           <a href="#projects-container">Projects</a>
         </p>
         <p className="menu-option">
-          <a href="#skills">About Me</a>
+          <a href="#footer">Contact</a>
         </p>
       </div>
     );
@@ -38,7 +38,7 @@ export default function Header() {
           <a href="#projects-container">Projects</a>
         </p>
         <p className="menu-option">
-          <a href="#skills">About Me</a>
+          <a href="#footer">Contact</a>
         </p>
       </div>
     );

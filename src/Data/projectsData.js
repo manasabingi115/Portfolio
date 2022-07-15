@@ -14,7 +14,7 @@ const projectsData = [
     projectName: "React Shopping Cart",
     description:
       "This is a Food Cart App. In this we can add food items into the cart. And in this, food items are separated according to their type like vegetables, fruits and nuts.",
-    technologiesUsed: ["ReactJs", "HTML", "CSS", "Api", "Bootstrap"],
+    technologiesUsed: ["ReactJs", "HTML", "CSS", "Api"],
     liveAt: "https://03s3u.csb.app/",
     githubRepo: "https://github.com/manasabingi115/React-Shopping-Cart"
   },
@@ -24,7 +24,7 @@ const projectsData = [
     projectName: "WareHouses (Redux) Project",
     description:
       "This is a project using Redux. We can search WareHouses with the name of Warehouse. Added filter functionality for different categories (cities, clusters and space availability). We can edit WareHouse details by clicking on the warehouse name.",
-    technologiesUsed: ["ReactJs", "Redux", "HTML", "CSS", "Api", "Bootstrap"],
+    technologiesUsed: ["ReactJs", "Redux", "HTML", "CSS", "Api"],
     liveAt: "https://06gfhm.csb.app/",
     githubRepo: "https://github.com/manasabingi115/WoreHouses-Redux-project"
   },
@@ -34,7 +34,7 @@ const projectsData = [
     projectName: "Facebook Post Model",
     description:
       "In this App, we can post text and GIFs. I have used Giphy API for fetching the Gifs, and also made my App responsive. Added color functionality for background. I used localStorage for persisting the data even after refreshing the page.",
-    technologiesUsed: ["ReactJs", "HTML", "CSS", "Giphy Api", "Bootstrap"],
+    technologiesUsed: ["ReactJs", "HTML", "CSS", "Giphy Api"],
     liveAt: "https://react-w7phqf.stackblitz.io",
     githubRepo: "https://github.com/manasabingi115/Facebook-Post-model-"
   },
@@ -44,7 +44,7 @@ const projectsData = [
     projectName: "Food Recipe App",
     description:
       "This is a Food Recipe App. In this we can search for different types of food recipes which we want.",
-    technologiesUsed: ["ReactJs", "HTML", "CSS", "Api", "Bootstrap"],
+    technologiesUsed: ["ReactJs", "HTML", "CSS", "Api"],
     liveAt: "https://yvltb.csb.app/",
     githubRepo: "https://github.com/manasabingi115/Food-Recipe-App"
   },

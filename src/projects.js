@@ -54,7 +54,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="buttons-in-card">
+            <div className="buttons buttons-in-card are-small">
               <a
                 href={data.liveAt}
                 target="blank"
