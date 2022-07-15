@@ -8,7 +8,10 @@ export default function Projects() {
       <h1 className="projects-title">Projects</h1>
       <div id="projects" className="columns is-multiline">
         {data.map((data, index) => (
-          <div className="card project-card column is-one-quarter" key={index}>
+          <div
+            className="card project-card column is-one-quarter is-half-tablet"
+            key={index}
+          >
             <div className="card-image">
               <figure className="image is-4by3">
                 <img src={data.image} alt="Placeholder img" />
@@ -18,13 +21,13 @@ export default function Projects() {
             <div className="card-content projects-card-content">
               <div className="media">
                 <div className="media-content">
-                  <p className="title is-4">{data.projectName}</p>
+                  <p className="title is-6">{data.projectName}</p>
                 </div>
                 {/* <img src={data.image} /> */}
               </div>
 
               <div className="content">
-                <p>{data.description}</p>
+                <p className="project-description">{data.description}</p>
 
                 {/* <div className="techs-in-companies columns is-multiline is-mobile">
                 {data.technologies.map((tech, index) => (
@@ -37,7 +40,7 @@ export default function Projects() {
                 ))}
               </div> */}
                 <p>Technologies Used:</p>
-                <br />
+                {/* <br /> */}
 
                 <div className="techs-in-projects columns is-multiline is-mobile">
                   {data.technologiesUsed.map((el, index) => (
@@ -49,7 +52,6 @@ export default function Projects() {
                     </p>
                   ))}
                 </div>
-                <div className="techs-in-companies columns is-multiline is-mobile"></div>
               </div>
             </div>
             <div className="buttons-in-card">

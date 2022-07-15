@@ -94,20 +94,23 @@ body {
 }
 .techs-in-companies {
   margin: 0px 20px;
+  align-items: center;
 }
 .techs-in-projects {
   align-items: center;
+  margin-top: 0px;
 }
 .tech-in-company,
 .techs-in-project {
-  max-width: 120px;
-  margin: 5px 10px;
+  max-width: 85px;
+  margin: -4px 2px;
   border-radius: 30px;
-  padding: 6px 15px;
+  padding: 5px 9px;
   background: rgb(224, 247, 224);
   align-items: center;
   justify-content: center;
-  /* margin-bottom: unset; */
+  margin-bottom: unset;
+  font-size: 10px;
 }
 .exp-title,
 .skills-title,
@@ -190,6 +193,9 @@ body {
   /* display: flex;
   justify-content: space-evenly; */
 }
+.project-description {
+  font-size: smaller;
+}
 
 @media screen and (max-width: 800px) {
   #root {
@@ -210,6 +216,9 @@ body {
   }
   .project-card {
     min-width: 510px;
+  }
+  .exp-cards {
+    min-width: unset;
   }
 }
 

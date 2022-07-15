@@ -17,7 +17,7 @@ export default function Skills() {
         {skillData.map((data, index) => (
           <div
             key={index}
-            className="column is-one-quarter is-flex skill-card-parent"
+            className="column is-one-quarter is-two-thirds-tablet is-flex skill-card-parent"
           >
             <div className="card skill-cards">
               <img
