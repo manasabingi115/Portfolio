@@ -8,16 +8,21 @@ export default function Footer() {
       "https://mail.google.com/mail/?view=cm&fs=1&to=manasabingi115@gmail.com"
   };
 
-  // console.log(socialMedia);
   return (
     <div className="footer columns" id="footer">
       <div className="column">
         <p className="name-in-footer">Manasa Bingi.</p>
         <p className="role-name-in-footer">Front end developer.</p>
-        <button className="button is-black is-rounded">Contact Me</button>
+        <a
+          href={socialMedia.gmail}
+          className="button is-black is-rounded"
+          target="blank"
+        >
+          Contact Me
+        </a>
       </div>
       <div className="column">
-        <p>SOCIAL MEDIA</p>
+        <p className="footer-header">SOCIAL MEDIA</p>
         <div>
           <a href={socialMedia.linkedIn} target="blank">
             LinkedIn
@@ -33,10 +38,20 @@ export default function Footer() {
         </div>
       </div>
       <div className="column">
-        <p>EXPLORE</p>
+        <p className="footer-header">EXPLORE</p>
+        <div>
+          <a href="#home">Home</a>
+          <br />
+          <a href="#skills">Skills</a>
+          <br />
+          <a href="#projects-container">Projects</a>
+          <br />
+          <a href="#footer">Contact</a>
+          <br />
+        </div>
       </div>
-      <div className=" column">
-        <p>USEFUL LINKS</p>
+      <div className="column">
+        <p className="footer-header">USEFUL LINKS</p>
         <a
           href="https://docs.google.com/document/d/1UdAur_a4h_9o5A2XBAabc4m2tfEFE_h_4RGqSbTKIk0/edit?usp=sharing"
           target="blank"

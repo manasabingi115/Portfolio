@@ -3,7 +3,6 @@ import { GoThreeBars } from "react-icons/go";
 import { ImCancelCircle } from "react-icons/im";
 
 export default function Header() {
-  // const menuList = ["Home", "Skills", "Projects", "About Me"];
   const [mobileMenu, setMobileMenu] = React.useState();
   function Menu() {
     return (

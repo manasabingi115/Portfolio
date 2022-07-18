@@ -1,6 +1,5 @@
 import React from "react";
 import data from "./Data/projectsData";
-// import fbimage from "./Images/facebook post model.png";
 
 export default function Projects() {
   return (
@@ -23,24 +22,12 @@ export default function Projects() {
                 <div className="media-content">
                   <p className="title is-6">{data.projectName}</p>
                 </div>
-                {/* <img src={data.image} /> */}
               </div>
 
               <div className="content">
                 <p className="project-description">{data.description}</p>
 
-                {/* <div className="techs-in-companies columns is-multiline is-mobile">
-                {data.technologies.map((tech, index) => (
-                  <p
-                    key={index}
-                    className="tech-in-company column is-one-sixth is-flex"
-                  >
-                    <span>{tech}</span>
-                  </p>
-                ))}
-              </div> */}
                 <p>Technologies Used:</p>
-                {/* <br /> */}
 
                 <div className="techs-in-projects columns is-multiline is-mobile">
                   {data.technologiesUsed.map((el, index) => (
