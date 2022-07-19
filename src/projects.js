@@ -5,6 +5,7 @@ export default function Projects() {
   return (
     <div id="projects-container">
       <h1 className="projects-title">Projects</h1>
+      <p>These are some of my projects that I worked on.</p>
       <div id="projects" className="columns is-multiline">
         {data.map((data, index) => (
           <div

@@ -16,6 +16,7 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  padding-top: 25px;
 }
 .name {
   font-size: 45px;
@@ -164,6 +165,7 @@ body {
   justify-content: center;
   margin-left: -200px;
   margin-right: -200px;
+  margin-top: 15px;
 }
 .project-card {
   margin: 10px;
@@ -185,6 +187,9 @@ body {
 #projects-container,
 #experience {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .name-in-footer {
   font-size: 25px;
@@ -199,6 +204,10 @@ body {
   .footer {
     margin: unset;
     margin-top: 100px;
+  }
+  #projects {
+    margin-left: unset;
+    margin-right: unset;
   }
 }
 @media screen and (max-width: 1024px) {
