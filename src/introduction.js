@@ -9,7 +9,7 @@ export default function Introduction() {
           👋
         </span>
       </h3>
-      <h1>Front-End Developer</h1>
+      <h1 className="role">Front-End Developer</h1>
       <p>
         I am a Self-taught Front-End Developer. I like to work on exciting
         projects on the Frontend. I have done so many projects. You can take a
